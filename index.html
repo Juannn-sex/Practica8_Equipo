@@ -1,122 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Juan Manuel Rodríguez Guerrero — Presentación</title>
+  <meta charset="UTF-8">
+  <title>Presentación del Equipo</title>
   <style>
-    :root{
-      --bg: #1b478f;
-      --card: #0b1220;
-      --accent: #ff0000;
-      --muted: #98a3b8;
-      --glass: rgba(255,255,255,0.04);
-      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-      color-scheme: dark;
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      text-align: center;
+      padding: 40px;
     }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      min-height:100vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      background:linear-gradient(180deg,#071022 0%, #0b1830 100%);
-      padding:32px;
-      color: #000000;
-      -webkit-font-smoothing:antialiased;
+    h1 {
+      color: #333;
     }
-    .card{
-      width:100%;
-      max-width:520px;
-      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border-radius:16px;
-      box-shadow: 0 10px 30px rgba(2,6,23,0.6);
-      overflow:hidden;
-      display:grid;
-      grid-template-columns: 160px 1fr;
-      gap:20px;
-      padding:20px;
-      align-items:center;
+    ul {
+      list-style: none;
+      padding: 0;
     }
-    .avatar{
-      width:140px;
-      height:140px;
-      border-radius:12px;
-      background:var(--glass);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      overflow:hidden;
-      border:2px solid rgba(255,255,255,0.04);
+    li {
+      margin: 15px 0;
     }
-    .avatar img{
-      width:100%;
-      height:100%;
-      object-fit:cover;
+    a {
+      text-decoration: none;
+      background-color: #0077cc;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: 0.3s;
     }
-    .info h1{
-      margin:0 0 6px 0;
-      font-size:20px;
-      letter-spacing:0.2px;
-    }
-    .info p{
-      margin:0 0 12px 0;
-      color:var(--muted);
-      font-size:14px;
-    }
-    .badge{
-      display:inline-block;
-      padding:6px 10px;
-      border-radius:999px;
-      background: linear-gradient(90deg, rgba(255,209,102,0.12), rgba(255,209,102,0.06));
-      color:var(--accent);
-      font-weight:600;
-      font-size:13px;
-      border:1px solid rgba(255,209,102,0.08);
-    }
-    .meta{
-      display:flex;
-      gap:12px;
-      margin-top:10px;
-      align-items:center;
-      flex-wrap:wrap;
-    }
-    .link-back{
-      font-size:13px;
-      color:var(--muted);
-      text-decoration:none;
-      padding:8px 12px;
-      border-radius:8px;
-      background:transparent;
-      border:1px solid rgba(255,255,255,0.02);
-    }
-    /* responsive */
-    @media(max-width:520px){
-      .card{grid-template-columns:1fr; text-align:center}
-      .avatar{margin:0 auto}
-      .meta{justify-content:center}
+    a:hover {
+      background-color: #005fa3;
     }
   </style>
 </head>
 <body>
-  <article class="card" role="region" aria-label="Tarjeta de presentación de Juan Manuel Rodriguez Guerrero">
-    <div class="avatar">
-      <!-- Reemplaza IMAGE_URL por la URL directa de la imagen (minion mamado) -->
-      <img src="IMAGE_URL" alt="Minion mamado - foto de Juan Manuel" onerror="this.src='https://via.placeholder.com/300x300?text=Imagen+no+disponible'" />
-    </div>
+  <h1>Equipo de Desarrollo</h1>
+  <p>Conoce a los integrantes de nuestro equipo:</p>
 
-    <div class="info">
-      <h1>Juan Manuel Rodríguez Guerrero</h1>
-      <p>Materia favorita: <span class="badge">Programación</span></p>
-
-      <p style="color:var(--muted); font-size:14px; margin-top:6px;">Tarjeta de presentación para el repositorio del equipo. Contenido: nombre, materia favorita, imagen y enlace de regreso al índice.</p>
-
-      <div class="meta">
-        <a class="link-back" href="index.html">Regresar al índice</a>
-        <span style="font-size:13px;color:var(--muted)">Visibilidad pública: <strong style="color:var(--accent);">Pública</strong></span>
-      </div>
-    </div>
-  </article>
+  <ul>
+    <li><a href="juan.html">Juan</a></li>
+    <li><a href="kevin.html">Kevin</a></li>
+    <li><a href="lesly.html">Lesly</a></li>
+  </ul>
 </body>
 </html>
